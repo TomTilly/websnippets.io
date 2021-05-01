@@ -8,7 +8,8 @@ import Nav from './Nav';
 const HeaderStyles = styled.header`
   background-color: var(--white);
   width: 300px;
-  padding: 1rem 3rem;
+  min-height: 100vh;
+  padding: var(--vertical-page-margins) 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -38,8 +39,8 @@ function Header() {
       <p className="small">
         Minimal, clean code snippets ready to plug into your projects.
       </p>
-      <Link
-        to="https://github.com/TomTilly/websnippets.io"
+      <a
+        href="https://github.com/TomTilly/websnippets.io"
         aria-label="Link to Github repo"
         target="_blank"
         rel="noopener noreferrer"
@@ -50,7 +51,7 @@ function Header() {
           className="github-logo"
           alt="Octocat Github Logo"
         />
-      </Link>
+      </a>
       <Nav />
     </HeaderStyles>
   );

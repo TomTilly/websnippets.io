@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const NavStyles = styled.nav``;
 
 function Nav() {
-  return <NavStyles>hi</NavStyles>;
+  return <NavStyles />;
 }
 
 export default Nav;

@@ -7,13 +7,20 @@ import Header from './Header';
 
 const LayoutStyles = styled.div`
   display: flex;
+  main {
+    flex-grow: 1;
+    max-width: 800px;
+    background: var(--white);
+    margin: var(--vertical-page-margins) 6rem;
+    box-shadow: var(--elevation-2);
+  }
 `;
 
 const Layout = ({ children }) => (
   <LayoutStyles>
     <GlobalStyles />
     <Header />
-    {children}
+    <main>{children}</main>
   </LayoutStyles>
 );
 

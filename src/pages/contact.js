@@ -10,4 +10,4 @@ const ContactPage = () => (
   </>
 );
 
-export default SecondPage;
+export default ContactPage;

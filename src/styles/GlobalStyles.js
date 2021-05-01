@@ -26,7 +26,8 @@ const GlobalStyles = createGlobalStyle`
     --elevation-2: 0px 4px 6px rgba(0, 0, 0, 0.12);
     --elevation-3: 0px 7px 15px rgba(0, 0, 0, 0.09);
     --elevation-4: 0px 15px 25px rgba(0, 0, 0, 0.09);
-    --base-font-size: 1.6rem;
+    --elevation-test: 10px 10px 0 #000;
+    --vertical-page-margins: 3rem;
   }
 
   html {
