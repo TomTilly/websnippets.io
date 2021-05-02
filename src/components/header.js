@@ -2,8 +2,11 @@ import { Link } from 'gatsby';
 import React from 'react';
 import styled from 'styled-components';
 import Logo from '../assets/images/logo.inline.svg';
+import LinkedInLogo from '../assets/images/linkedin.inline.svg';
+import TwitterLogo from '../assets/images/twitter.inline.svg';
 import githubLogo from '../assets/images/github-logo.png';
 import Nav from './Nav';
+import ExternalLink from './ExternalLink';
 
 const HeaderStyles = styled.header`
   background-color: var(--white);
@@ -39,20 +42,40 @@ function Header() {
       <p className="small">
         Minimal, clean code snippets ready to plug into your projects.
       </p>
-      <a
-        href="https://github.com/TomTilly/websnippets.io"
-        aria-label="Link to Github repo"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="github-link"
+      <ExternalLink
+        to="https://github.com/TomTilly/websnippets.io"
+        className="github-logo"
       >
         <img
           src={githubLogo}
           className="github-logo"
           alt="Octocat Github Logo"
         />
-      </a>
+      </ExternalLink>
       <Nav />
+      <p className="small">
+        Submit improvements or bug fixes over on{' '}
+        <ExternalLink to="https://github.com/TomTilly/websnippets.io">
+          Github
+        </ExternalLink>
+        !
+      </p>
+      <hr />
+      <p className="small">
+        Built by <a href="https://tomtillistrand.com">Tom Tillistrand</a>
+      </p>
+      <hr />
+      <div>
+        <div className="social-icons">
+          <ExternalLink to="https://www.linkedin.com/in/tomtillistrand/">
+            <LinkedInLogo />
+          </ExternalLink>
+          <ExternalLink to="https://twitter.com/tomtillistrand">
+            <TwitterLogo />
+          </ExternalLink>
+        </div>
+        <p className="small">Find me on social media!</p>
+      </div>
     </HeaderStyles>
   );
 }
