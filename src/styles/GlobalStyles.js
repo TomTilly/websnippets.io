@@ -61,7 +61,7 @@ const GlobalStyles = createGlobalStyle`
     z-index: 1;
   }
 
-  :is(h2, h3, h4, h5, h6)::before {
+  /* :is(h2, h3, h4, h5, h6)::before {
     position: absolute;
     content: '';
     left: 0;
@@ -83,7 +83,7 @@ const GlobalStyles = createGlobalStyle`
     transform: translate(15%, -50%);
     z-index: -2;
     background-color: var(--secondary-400);
-  }
+  } */
 
   h1, .h1 {
     font-size: 3.98rem;

@@ -19,7 +19,7 @@ const IndexPage = () => (
       paste the HTML, CSS, and JavaScript straight into your projects.
       Alternatively, you can run
       <InlineCode>npm install websnippets-standard</InlineCode> in your project
-      directory and link to the appropriate CSS and JS.
+      directory and link to the appropriate CSS and JS files in your HTML.
     </p>
 
     <p>
@@ -29,21 +29,12 @@ const IndexPage = () => (
     </p>
     <h2>Background</h2>
     <p>
-      This site was built by me (
-      <a
-        href="https://tomtillistrand.com"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Tom Tillistrand
-      </a>
-      ) to share my personal component library with other web developers. The
-      code is open source, which I hope leads to other developers submitting
-      improvements which we can all learn and benefit from. My last goal with
-      this project was to provide consistent, well-formed code for all the
-      common UI elements that beginning web developers could use as reliable
-      references. Many components have companion "How To" articles on my
-      website.
+      This site was built to share my personal component library with other web
+      developers. The code is open source, which I hope leads to other
+      developers submitting improvements which we can all learn and benefit
+      from. I also hope these components serve as consistent, well-formed code
+      references for newer web developers. Many components have companion "How
+      To" articles on my website.
     </p>
     <h2>Contributing</h2>
     <p>

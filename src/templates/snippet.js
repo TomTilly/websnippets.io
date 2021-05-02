@@ -4,11 +4,13 @@ import snippets from '../snippets/snippet-list';
 import Button from '../components/Button';
 
 function Snippet({ data }) {
-  const { html, css, js, slug } = data.directory.fields;
-  const snippet = snippets.find((item) => item.id === slug.replaceAll('/', ''));
+  const { html, css, js } = data.directory.fields;
+  const snippet = snippets.find((item) => item.id === data.directory.base);
+  if (!snippet) {
+    return null;
+  }
   const { name, description } = snippet;
 
-  console.log(data);
   return (
     <>
       <h1>{name}</h1>
@@ -40,8 +42,8 @@ export const query = graphql`
         html
         css
         js
-        slug
       }
+      base
     }
   }
 `;
