@@ -13,6 +13,7 @@ const LayoutStyles = styled.div`
     background: var(--white);
     margin: var(--vertical-page-margins) 6rem;
     box-shadow: var(--elevation-2);
+    padding: 3rem;
   }
 `;
 

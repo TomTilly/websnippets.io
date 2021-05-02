@@ -47,6 +47,7 @@ const GlobalStyles = createGlobalStyle`
     background-color: var(--secondary-400);
   }
 
+  /* Typography */
   p {
     letter-spacing: 0.5px;
     margin-top: 0;
@@ -54,27 +55,68 @@ const GlobalStyles = createGlobalStyle`
 
   h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
-    margin-top: 0;
+    line-height: 1.2;
+    margin: 3rem 0 1.38rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  :is(h2, h3, h4, h5, h6)::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: .4em;
+    height: .4em;
+    transform: translateX(-50%);
+    z-index: -1;
+    background-color: var(--primary-200);
+  }
+
+  :is(h2, h3, h4, h5, h6)::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: .3em;
+    height: .3em;
+    transform: translate(15%, -50%);
+    z-index: -2;
+    background-color: var(--secondary-400);
   }
 
   h1, .h1 {
-    font-size: 6.73rem;
+    font-size: 3.98rem;
+    margin-top: 0;
+  }
+
+  h1 {
+    display: inline-block;
+  }
+
+  h1::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    margin-top: 3px;
+    background-color: var(--primary-200);
   }
 
   h2, .h2 {
-    font-size: 5.05rem;
+    font-size: 3.31rem;
   }
 
   h3, .h3 {
-    font-size: 3.79rem;
+    font-size: 2.76rem;
   }
 
   h4, .h4 {
-    font-size: 2.84rem;
+    font-size: 2.3rem;
   }
 
   h5, .h5 {
-    font-size: 2.13rem;
+    font-size: 1.92rem;
   }
 
   h6, .h6 {
@@ -82,7 +124,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   small, .small {
-    font-size: 1.2rem;
+    font-size: 1.28rem;
   }
 
   a {
@@ -95,6 +137,8 @@ const GlobalStyles = createGlobalStyle`
     text-decoration: underline;
   }
 
+  /* Global button styles */
+
   .btn {
     padding: 1.25rem 2.75rem;
     border-style: solid;
@@ -103,6 +147,7 @@ const GlobalStyles = createGlobalStyle`
     cursor: pointer;
     box-shadow: var(--elevation-1);
     transition: background-color .05s linear, transform .05s linear, box-shadow .05s linear;
+    display: inline-block;
   }
 
   .btn:hover, .btn:focus {
@@ -123,6 +168,8 @@ const GlobalStyles = createGlobalStyle`
 
   .btn--primary:hover, .btn--primary:focus {
     background: var(--primary-300);
+    color: var(--white);
+    text-decoration: none;
     border-color: var(--primary-300);
   }
 
