@@ -15,7 +15,7 @@ const HeaderStyles = styled.header`
   padding: var(--vertical-page-margins) 3rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   .home-link {
     display: flex;
   }
@@ -24,8 +24,10 @@ const HeaderStyles = styled.header`
   }
   .github-link {
     display: flex;
+    align-self: center;
   }
   .github-logo {
+    display: block;
     width: 3.2rem;
     &:hover {
       opacity: 0.8;
@@ -44,7 +46,7 @@ function Header() {
       </p>
       <ExternalLink
         to="https://github.com/TomTilly/websnippets.io"
-        className="github-logo"
+        className="github-link"
       >
         <img
           src={githubLogo}

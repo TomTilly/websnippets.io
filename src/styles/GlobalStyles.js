@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 import '@fontsource/poppins/400.css';
-import '@fontsource/poppins/700.css';
+import '@fontsource/poppins/600.css';
 
 const GlobalStyles = createGlobalStyle`
   :root {
@@ -135,6 +135,11 @@ const GlobalStyles = createGlobalStyle`
   a:hover, a:focus {
     color: var(--primary-200);
     text-decoration: underline;
+  }
+
+  hr {
+    border: 1px solid var(--primary-400);
+    width: 25px;
   }
 
   /* Global button styles */
