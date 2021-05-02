@@ -6,7 +6,9 @@ import GlobalStyles from '../styles/GlobalStyles';
 import Header from './Header';
 
 const LayoutStyles = styled.div`
-  display: flex;
+  @media (min-width: 1040px) {
+    display: flex;
+  }
   main {
     flex-grow: 1;
     max-width: 800px;

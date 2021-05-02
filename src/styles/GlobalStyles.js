@@ -14,8 +14,9 @@ const GlobalStyles = createGlobalStyle`
     --tertiary-300: #E86E6E;
     --tertiary-200: #EB8484;
     --black: #2B2C34;
-    --grey: #BFBFBF;
-    --light-grey: #FBFBFB;
+    --grey-400: #BFBFBF;
+    --grey-300: #E3E3E3;
+    --grey-200: #FBFBFB;
     --white: #FFFFFE;
     --snippet-400: #2082DD;
     --snippet-300: #4D9CE5;
