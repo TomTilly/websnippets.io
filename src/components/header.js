@@ -1,5 +1,5 @@
 import { Link } from 'gatsby';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import Hamburger from 'hamburger-react';
 import Logo from '../assets/images/logo.inline.svg';
@@ -58,12 +58,15 @@ const HeaderStyles = styled.header`
   }
 
   .menu {
-    min-height: 100vh;
     width: 100%;
-    position: absolute;
-    top: 100%;
-    left: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin-top: 68px; /* height of navbar */
     transition: transform 0.2s ease-in-out;
+    transform: translateX(100%);
     background: var(--white);
     z-index: 10;
     border-top: 1px solid var(--grey-300);
@@ -73,13 +76,37 @@ const HeaderStyles = styled.header`
     align-items: center;
 
     &.open {
-      transform: translateX(-100%);
+      transform: translateX(0);
+    }
+  }
+
+  .footer-note {
+    margin: 0.5rem 0;
+  }
+
+  .social-link {
+    margin: 0 0.25em;
+
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+    }
+
+    svg {
+      width: 1.2em;
+      height: 1.2em;
+      vertical-align: text-top;
     }
   }
 `;
 
 function Header() {
   const [isOpen, setOpen] = useState(false);
+
+  useEffect(() => {
+    // Hide scrollbars on document when navigation menu is showing on mobile
+    document.documentElement.style.overflow = isOpen ? 'hidden' : 'auto';
+  }, [isOpen]);
 
   return (
     <HeaderStyles>
@@ -107,7 +134,7 @@ function Header() {
           />
         </ExternalLink>
         <Nav setOpen={setOpen} />
-        <p className="small">
+        <p className="small footer-note">
           Submit improvements or bug fixes over on{' '}
           <ExternalLink to="https://github.com/TomTilly/websnippets.io">
             Github
@@ -115,21 +142,25 @@ function Header() {
           !
         </p>
         <hr />
-        <p className="small">
+        <p className="small footer-note">
           Built by <a href="https://tomtillistrand.com">Tom Tillistrand</a>
         </p>
         <hr />
-        <div>
-          <div className="social-icons">
-            <ExternalLink to="https://www.linkedin.com/in/tomtillistrand/">
-              <LinkedInLogo />
-            </ExternalLink>
-            <ExternalLink to="https://twitter.com/tomtillistrand">
-              <TwitterLogo />
-            </ExternalLink>
-          </div>
-          <p className="small">Find me on social media!</p>
-        </div>
+        <p className="small footer-note">
+          Find me on social media!{' '}
+          <ExternalLink
+            to="https://www.linkedin.com/in/tomtillistrand/"
+            className="social-link"
+          >
+            <LinkedInLogo className="linkedin-logo" />
+          </ExternalLink>
+          <ExternalLink
+            to="https://twitter.com/tomtillistrand"
+            className="social-link"
+          >
+            <TwitterLogo className="twitter-logo" />
+          </ExternalLink>
+        </p>
       </div>
     </HeaderStyles>
   );
