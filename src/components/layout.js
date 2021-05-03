@@ -10,12 +10,14 @@ const LayoutStyles = styled.div`
     display: flex;
   }
   main {
-    flex-grow: 1;
-    max-width: 800px;
     background: var(--white);
     margin: var(--vertical-page-margins) 6rem;
     box-shadow: var(--elevation-2);
     padding: 3rem;
+
+    @media (min-width: 1040px) {
+      max-width: 900px;
+    }
   }
 `;
 

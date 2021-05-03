@@ -21,10 +21,12 @@ const HeaderStyles = styled.header`
   @media (min-width: 1040px) {
     width: 300px;
     min-height: 100vh;
+    flex-shrink: 0;
     padding: var(--vertical-page-margins) 3rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: flex-start;
   }
 
   .home-link {
@@ -43,9 +45,14 @@ const HeaderStyles = styled.header`
     }
   }
 
+  .hamburger {
+    @media (max-width: 1039px) {
+      display: none;
+    }
+  }
+
   .github-link {
-    text-align: center;
-    display: inline-block;
+    align-self: center;
   }
 
   .github-logo {
@@ -74,6 +81,20 @@ const HeaderStyles = styled.header`
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media (min-width: 1040px) {
+      position: static;
+      margin: 0;
+      transform: none;
+      transition: none;
+      border-top: none;
+      align-items: flex-start;
+      padding: 0;
+
+      hr {
+        margin-left: 0;
+      }
+    }
 
     &.open {
       transform: translateX(0);
@@ -121,7 +142,11 @@ function Header() {
       <p className="tagline small">
         Minimal, clean code snippets ready to plug into your projects.
       </p>
-      <Hamburger toggled={isOpen} toggle={setOpen} />
+      <Hamburger
+        toggled={isOpen}
+        toggle={setOpen}
+        style={{ background: 'red' }}
+      />
       <div className={`menu ${isOpen ? 'open' : ''}`}>
         <ExternalLink
           to="https://github.com/TomTilly/websnippets.io"

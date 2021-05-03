@@ -193,6 +193,15 @@ const GlobalStyles = createGlobalStyle`
   .btn--secondary:hover, .btn--secondary:focus {
     background: var(--light-grey);
   }
+
+  /* Vendor Overrides */
+
+  .hamburger-react {
+    @media (min-width: 1040px) {
+      display: none;
+    }
+  }
+
 `;
 
 export default GlobalStyles;
