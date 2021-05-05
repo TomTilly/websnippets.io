@@ -19,14 +19,16 @@ const HeaderStyles = styled.header`
   box-shadow: var(--elevation-1);
 
   @media (min-width: 1040px) {
-    width: 300px;
-    min-height: 100vh;
+    width: var(--sidebar-width);
+    height: 100vh;
+    overflow: auto;
     flex-shrink: 0;
     padding: var(--vertical-page-margins) 3rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+    position: fixed;
   }
 
   .home-link {
@@ -81,6 +83,7 @@ const HeaderStyles = styled.header`
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: auto;
 
     @media (min-width: 1040px) {
       position: static;
@@ -90,6 +93,7 @@ const HeaderStyles = styled.header`
       border-top: none;
       align-items: flex-start;
       padding: 0;
+      overflow: unset;
 
       hr {
         margin-left: 0;

@@ -29,6 +29,7 @@ const GlobalStyles = createGlobalStyle`
     --elevation-4: 0px 15px 25px rgba(0, 0, 0, 0.09);
     --elevation-test: 10px 10px 0 #000;
     --vertical-page-margins: 3rem;
+    --sidebar-width: 300px;
   }
 
   html {
@@ -197,6 +198,7 @@ const GlobalStyles = createGlobalStyle`
   /* Vendor Overrides */
 
   .hamburger-react {
+    margin-left: 1rem;
     @media (min-width: 1040px) {
       display: none;
     }
