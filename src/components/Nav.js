@@ -100,66 +100,6 @@ function Nav({ setOpen }) {
             </Link>
           </li>
         ))}
-        <li>lorem</li>
-        <li>lorem</li>
-        <li>lorem</li>
-        <li>lorem</li>
-        <li>lorem</li>
-        <li>lorem</li>
-        <li>lorem</li>
-        <li>lorem</li>
-        <li>lorem</li>
-        <li>lorem</li>
-        <li>lorem</li>
-        <li>lorem</li>
-        <li>lorem</li>
-        <li>lorem</li>
-        <li>lorem</li>
-        <li>lorem</li>
-        <li>lorem</li>
-        <li>lorem</li>
-        <li>lorem</li>
-        <li>lorem</li>
-        <li>lorem</li>
-        <li>lorem</li>
-        <li>lorem</li>
-        <li>lorem</li>
-        <li>lorem</li>
-        <li>lorem</li>
-        <li>lorem</li>
-        <li>lorem</li>
-        <li>lorem</li>
-        <li>lorem</li>
-        <li>lorem</li>
-        <li>lorem</li>
-        <li>lorem</li>
-        <li>lorem</li>
-        <li>lorem</li>
-        <li>lorem</li>
-        <li>lorem</li>
-        <li>lorem</li>
-        <li>lorem</li>
-        <li>lorem</li>
-        <li>lorem</li>
-        <li>lorem</li>
-        <li>lorem</li>
-        <li>lorem</li>
-        <li>lorem</li>
-        <li>lorem</li>
-        <li>lorem</li>
-        <li>lorem</li>
-        <li>lorem</li>
-        <li>lorem</li>
-        <li>lorem</li>
-        <li>lorem</li>
-        <li>lorem</li>
-        <li>lorem</li>
-        <li>lorem</li>
-        <li>lorem</li>
-        <li>lorem</li>
-        <li>lorem</li>
-        <li>lorem</li>
-        <li>lorem</li>
       </ul>
     </NavStyles>
   );

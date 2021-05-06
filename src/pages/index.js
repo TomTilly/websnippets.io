@@ -49,33 +49,6 @@ const IndexPage = () => (
       </a>
       !
     </p>
-    <p>
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam labore
-      tempore laborum, cupiditate dolorum perspiciatis dolorem quod officiis
-      consequuntur ex molestias ratione eius aliquam impedit! Tempora illo
-      tenetur rem laborum? Sint laudantium nam aperiam numquam voluptas
-      perspiciatis, sapiente veritatis amet adipisci temporibus fugit ducimus
-      praesentium. Aliquid cum, tenetur tempore a, voluptas facilis facere odit
-      rem aliquam atque pariatur asperiores eaque.
-    </p>
-    <p>
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam labore
-      tempore laborum, cupiditate dolorum perspiciatis dolorem quod officiis
-      consequuntur ex molestias ratione eius aliquam impedit! Tempora illo
-      tenetur rem laborum? Sint laudantium nam aperiam numquam voluptas
-      perspiciatis, sapiente veritatis amet adipisci temporibus fugit ducimus
-      praesentium. Aliquid cum, tenetur tempore a, voluptas facilis facere odit
-      rem aliquam atque pariatur asperiores eaque.
-    </p>
-    <p>
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam labore
-      tempore laborum, cupiditate dolorum perspiciatis dolorem quod officiis
-      consequuntur ex molestias ratione eius aliquam impedit! Tempora illo
-      tenetur rem laborum? Sint laudantium nam aperiam numquam voluptas
-      perspiciatis, sapiente veritatis amet adipisci temporibus fugit ducimus
-      praesentium. Aliquid cum, tenetur tempore a, voluptas facilis facere odit
-      rem aliquam atque pariatur asperiores eaque.
-    </p>
   </>
 );
 
